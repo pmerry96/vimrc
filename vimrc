@@ -20,7 +20,7 @@ set noswapfile "no swap files will be created
 "set spell "enables spellcheck - default is off (uncomment to enable)
 
 set wildignore+=.swp "ignore swap files when opening
-set lazyredraw "redraw screen only when necessary, save vm resources
+"set lazyredraw "redraw screen only when necessary, save vm resources
 
 set wildmenu "visual autocomplete for cmd menu
 
@@ -50,30 +50,30 @@ set foldmethod=indent
 set foldnestmax=10
 set foldlevel=2
 
-nnoremap <space> za
+"nnoremap <space> za
     "remap the fold char from 'za' to <space>, only when not in insert mode
 
-nnoremap B ^
+"nnoremap B ^
     "B now moves you to beginning of line when in normal  mode
-nnoremap E $
+"nnoremap E $
     "E now moves you to end of line when in normal  mode
 
 "unbind the orignal beginning/end line keys
-nnoremap $ <nop>
-nnoremap ^ <nop>
+"nnoremap $ <nop>
+"nnoremap ^ <nop>
 
 
 "highlight last inserted text
 nnoremap gV `[v`]
 
 "add 'jk' to get out of insert mode
-inoremap jk <esc> 
+"inoremap jk <esc> 
     "note you can still use <esc>
 
 "add 'jk' to get into insert mode
-nnoremap jk i
+"nnoremap jk i
 
-let mapleader="," 
+"let mapleader="," 
     "anywhere you see <leader> below, it means a comma
 
 "add in 'superundo'
@@ -81,13 +81,13 @@ let mapleader=","
 "a user to see the entire tree in graphical form
 "for easier traversal
 "the 'superundo' bind is 'u,' 
-nnoremap <leader>u :GundoToggle<CR>
+"nnoremap <leader>u :GundoToggle<CR>
 
 
 "session save, you can re-open a session with 
 "$ vim -S
 "note to save a session type exactly ":mksession" while in normal mode
-nnoremap <leader>s :mksession<CR>
+"nnoremap <leader>s :mksession<CR>
 
 set backup "enable backing up files. if lost, check these dirs
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
