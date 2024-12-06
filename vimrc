@@ -32,14 +32,13 @@ set mouse=a "enable mouse/clicking in all modes
 
 
 "The below three options mean you must use a double tab for makefile recipes
-"to disable these lines, append a preceding " to the line, and it will comment
-"the line out
 set noexpandtab "tab does NOT insert spaces in place of tab
-set tabstop=4 "number of visual spaces per TAB
-set softtabstop=4 "sets tab to 4 spaces when editing, ie remove 4 spaces when backspacing a tab
+set tabstop=2 "number of visual spaces per TAB
+set softtabstop=2 "sets tab to 2 spaces when editing, ie remove 2 spaces when backspacing a tab
 
-set colorcolumn=100 "voided with line set textwidth = 120
-highlight ColorColumn guibg=#155460 "highlights the 120 char column
+"Commented out since this isnt needed anymore
+"set colorcolumn=100 "voided with line set textwidth = 120
+"highlight ColorColumn guibg=#155460 "highlights the 120 char column
 
 "the below 4 lines allow folding. IE you can collapes
 "large blocks (IE for/while loops) based on indents. This can
